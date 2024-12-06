@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { Icon } from '@iconify/vue'
+</script>
 
 <template>
   <div
@@ -42,8 +44,8 @@
       >
         GitHub
 
-        <img
-          src="/src/components/icons/github.png"
+        <Icon
+          icon="logos:github-icon"
           alt="GitHub logo"
           width="24"
           height="24"
@@ -56,13 +58,7 @@
         target="_blank"
       >
         <span class="opacity-70">LinkedIn</span>
-        <img
-          src="/src/components/icons/linkedin.png"
-          alt="LinkedIn logo"
-          width="24"
-          height="24"
-          class="opacity-70"
-        />
+        <Icon icon="il:linkedin" alt="LinkedIn logo" width="24" height="24" class="opacity-70" />
       </a>
     </div>
   </div>

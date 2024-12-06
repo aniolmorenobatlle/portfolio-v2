@@ -12,13 +12,16 @@ const skills = [
   { name: 'Bootstrap', icon: 'logos:bootstrap' },
   { name: 'Vite', icon: 'logos:vitejs' },
   { name: 'Java', icon: 'logos:java' },
+  { name: 'Kotlin', icon: 'logos:kotlin-icon' },
   { name: 'Python', icon: 'logos:python' },
-  { name: 'MariaDB', icon: 'logos:mariadb' },
+  { name: 'MariaDB', icon: 'logos:mariadb-icon' },
   { name: 'MySQL', icon: 'logos:mysql' },
   { name: 'AWS', icon: 'logos:aws' },
+  { name: 'Oracle Cloud', icon: 'cib:oracle' },
   { name: 'Git', icon: 'logos:git-icon' },
   { name: 'GitHub', icon: 'logos:github-icon' },
   { name: 'Docker', icon: 'logos:docker-icon' },
+  { name: 'Android Studio', icon: 'mdi:android-studio' },
 ]
 </script>
 
@@ -29,7 +32,7 @@ const skills = [
       <li
         v-for="(skill, index) in skills"
         :key="index"
-        class="flex flex-col items-center px-4 py-3 dark:text-white/80 iconify transition-transform duration-300 hover:scale-125"
+        class="flex flex-col items-center px-4 py-3 dark:text-white/80 transition-transform duration-300 hover:scale-125"
       >
         <Icon :icon="skill.icon" class="text-5xl md:text-7xl" />
         <span class="mt-2">{{ skill.name }}</span>
