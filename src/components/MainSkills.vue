@@ -6,7 +6,7 @@ const skills = [
   { name: 'HTML', icon: 'vscode-icons:file-type-html' },
   { name: 'CSS', icon: 'vscode-icons:file-type-css' },
   { name: 'PHP', icon: 'logos:php' },
-  { name: 'Vue.js', icon: 'vscode-icons:file-type-vue' },
+  { name: 'Vue.js', icon: 'logos:vue' },
   { name: 'Laravel', icon: 'logos:laravel' },
   { name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
   { name: 'Bootstrap', icon: 'logos:bootstrap' },
