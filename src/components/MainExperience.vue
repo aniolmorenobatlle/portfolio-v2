@@ -67,14 +67,19 @@ const experiences = [
           style="background: #f3f4f6"
           class="vertical-timeline-element-content bounce-in shadow-none border border-black/5 text-left py-5 px-8"
         >
-          <h3 class="font-semibold capitalize">{{ experience.role }}</h3>
+          <h3 class="font-semibold capitalize flex justify-between items-center">
+            {{ experience.role }}
+            <span class="experience-dates-responsive text-center hidden">
+              {{ experience.dates }}</span
+            >
+          </h3>
           <p class="font-normal !mt-0">{{ experience.company }}</p>
           <p class="!mt-1 !font-normal text-gray-700 dark:text-white/75">
             {{ experience.description }}
           </p>
         </div>
         <!-- Afegim un nou div al costat oposat -->
-        <div class="additional-content text-center">
+        <div class="experience-dates text-center">
           <p>{{ experience.dates }}</p>
         </div>
       </div>
@@ -110,7 +115,7 @@ const experiences = [
   flex-direction: row;
 }
 
-.additional-content.text-center {
+.experience-dates.text-center {
   margin-top: 20px;
   opacity: 0.7;
   font-size: 1rem;
@@ -177,7 +182,6 @@ const experiences = [
   -webkit-box-sizing: border-box;
 }
 
-/* Alineació de les dates al costat oposat */
 .vertical-timeline-element-content .vertical-timeline-element-date {
   position: absolute;
   font-size: 13px;
@@ -185,23 +189,26 @@ const experiences = [
   opacity: 0.7;
   padding: 0.8em 0;
   display: inline-block;
-  text-align: center; /* Centrat dins el seu bloc */
+  text-align: center;
 }
 
-/* Si és un element "odd", la data estarà a l'esquerra */
 .vertical-timeline-element:nth-child(odd)
   .vertical-timeline-element-content
   .vertical-timeline-element-date {
-  left: 0; /* Posicionar la data a l'esquerra */
+  left: 0;
   right: auto;
 }
 
-/* Si és un element "even", la data estarà a la dreta */
 .vertical-timeline-element:nth-child(even)
   .vertical-timeline-element-content
   .vertical-timeline-element-date {
-  right: 0; /* Posicionar la data a la dreta */
+  right: 0;
   left: auto;
+}
+
+.vertical-timeline * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -217,9 +224,7 @@ const experiences = [
     right: 124%;
     text-align: right;
   }
-}
 
-@media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns
     .vertical-timeline-element-content
     .vertical-timeline-element-date {
@@ -230,21 +235,7 @@ const experiences = [
     font-size: 16px;
     font-size: 1rem;
   }
-}
 
-@media only screen and (min-width: 768px) {
-  .vertical-timeline-element-content .vertical-timeline-element-date {
-    font-size: 14px;
-    font-size: 0.875rem;
-  }
-}
-
-.vertical-timeline * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media only screen and (min-width: 1170px) {
   .vertical-timeline {
     width: 90%;
   }
@@ -265,6 +256,33 @@ const experiences = [
     margin-left: 0;
     padding: 1.5em;
     width: 44%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .experience-dates-responsive.text-center {
+    display: flex;
+    opacity: 0.7;
+    font-size: 0.75rem;
+  }
+
+  .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content {
+    margin-right: 0;
+  }
+
+  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content {
+    margin-left: 60px;
+  }
+
+  .experience-dates.text-center {
+    display: none;
   }
 }
 </style>
