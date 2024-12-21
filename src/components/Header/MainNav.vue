@@ -1,13 +1,16 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const sections = [
-  { name: 'Home', id: 'home' },
-  { name: 'Projects', id: 'projects' },
-  { name: 'Skills', id: 'skills' },
-  { name: 'Experience', id: 'experience' },
-  { name: 'Education', id: 'education' },
-  { name: 'Contact', id: 'contact' },
+  { name: t('home'), id: 'home' },
+  { name: t('projects'), id: 'projects' },
+  { name: t('skills'), id: 'skills' },
+  { name: t('experience'), id: 'experience' },
+  { name: t('education'), id: 'education' },
+  { name: t('contact'), id: 'contact' },
 ]
 
 const activeSection = ref('home')
@@ -66,7 +69,7 @@ const scrollToSection = (id) => {
           ]"
           @click="scrollToSection(section.id)"
         >
-          {{ section.name }}
+          {{ $t(section.name) }}
           <span
             v-if="activeSection === section.id"
             class="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"

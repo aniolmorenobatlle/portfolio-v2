@@ -3,7 +3,7 @@ import { Icon } from '@iconify/vue'
 </script>
 
 <template>
-  <footer class="bg-gray-800">
+  <footer class="bg-gray-900">
     <div class="w-full max-w-screen-xl mx-auto p-4 py-8">
       <span class="block text-gray-400 text-center text-2xl font-semibold">
         Aniol Moreno Batlle

@@ -1,4 +1,5 @@
 <script setup>
+import MainLanguages from '@/components/MainLanguages.vue'
 import MainNav from '@/components/Header/MainNav.vue'
 import MainHeader from '@/components/Header/MainHeader.vue'
 import MainProjects from '@/components/MainProjects.vue'
@@ -10,6 +11,8 @@ import MainFooter from '@/components/MainFooter.vue'
 </script>
 
 <template>
+  <MainLanguages />
+
   <header>
     <div class="wrapper">
       <MainNav />

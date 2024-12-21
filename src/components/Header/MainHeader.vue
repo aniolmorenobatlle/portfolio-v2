@@ -4,7 +4,7 @@ import { Icon } from '@iconify/vue'
 
 <template>
   <div
-    class="mb-16 sm:mb-0 text-center scroll-mt-[100rem] particles-section pt-28 pb-14 sm:pt-36 sm:pb-18 w-full px-4 bg-black"
+    class="mb-16 sm:mb-0 text-center scroll-mt-[100rem] particles-section pt-28 pb-14 sm:pt-36 sm:pb-18 w-full px-4 bg-gray-900"
   >
     <div class="flex items-center justify-center">
       <div class="relative">
@@ -19,9 +19,9 @@ import { Icon } from '@iconify/vue'
             style="color: transparent"
           />
         </div>
-        <span class="absolute bottom-0 right-0 text-4xl" style="opacity: 1; transform: none"
-          >👋</span
-        >
+        <span class="absolute bottom-0 right-0 text-4xl" style="opacity: 1; transform: none">
+          👋
+        </span>
       </div>
     </div>
 
@@ -63,5 +63,3 @@ import { Icon } from '@iconify/vue'
     </div>
   </div>
 </template>
-
-<style scoped></style>
