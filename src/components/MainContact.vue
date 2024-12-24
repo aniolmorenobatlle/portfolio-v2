@@ -1,26 +1,31 @@
-<script setup></script>
+<script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const title = computed(() => t('contact.title'))
+const email = computed(() => t('contact.email'))
+const message = computed(() => t('contact.message'))
+const send = computed(() => t('contact.send'))
+</script>
 
 <template>
   <section id="contact" class="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center" style="opacity: 1">
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">Contact me</h2>
-    <p class="text-gray-700 -mt-6 dark:text-white/80">
-      Please contact me directly at
-      <a class="underline" href="mailto:aniolmoreno@gmail.com">aniolmoreno@gmail.com</a> or through
-      this form.
-    </p>
+    <h2 class="text-3xl font-medium capitalize mb-8 text-center">{{ title }}</h2>
     <form class="mt-10 flex flex-col dark:text-black">
       <input
         class="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
         type="email"
         required=""
         maxlength="500"
-        placeholder="Your email"
+        :placeholder="email"
         name="senderEmail"
       />
       <textarea
         class="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
         name="message"
-        placeholder="Your message"
+        :placeholder="message"
         required=""
         maxlength="5000"
       >
@@ -29,7 +34,7 @@
         type="submit"
         class="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
       >
-        Submit
+        {{ send }}
         <svg
           stroke="currentColor"
           fill="currentColor"

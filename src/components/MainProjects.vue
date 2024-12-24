@@ -1,11 +1,21 @@
 <script setup>
+import { computed } from 'vue'
 import { Icon } from '@iconify/vue'
+import { useI18n } from 'vue-i18n'
 
-const projects = [
+import openJobsImg from '/src/assets/img/projects/openjobs.png'
+import apartamentsFiguerencsImg from '/src/assets/img/projects/apartamentsfiguerencs.png'
+import gramolaImg from '/src/assets/img/projects/gramola.png'
+import freeingAlzaharImg from '/src/assets/img/projects/freeing-alzahar.jpg'
+
+const { t } = useI18n()
+
+const title = computed(() => t('projects.title'))
+
+const projects = computed(() => [
   {
-    name: "Selecció d'Antibiótics en Intervencions Quirúrgiques",
-    description:
-      "Aquesta aplicació web va ser dissenyada i desenvolupada amb l'objectiu de facilitar la selecció ràpida i eficaç de l'antibiótic adequat per a cada intervenció quirúrgica. El projecte, que va ser realitzat per Joan Paneque, Emma Cardosa, Adrià Moya, Àlex Escribano i Aniol Moreno, va ser encarregat per l'Hospital Universitari de Girona Dr. Josep Trueta com a part d'una iniciativa per millorar els processos clínics. Aquesta aplicació va ser reconeguda amb el Premi de Grau Superior atorgat per la Universitat de Girona, destacant-se per la seva innovació i impacte en el sector sanitari.",
+    name: t('projects.trueta.title'),
+    description: t('projects.trueta.description'),
     techStack: [
       'logos:vue',
       'logos:laravel',
@@ -15,12 +25,11 @@ const projects = [
     ],
     demoLink: 'https://opendata.ignorelist.com/',
     githubLink: '',
-    mainImage: '/src/assets/img/projects/openjobs.png',
+    mainImage: openJobsImg,
   },
   {
-    name: 'Barbaq',
-    description:
-      "Barbaq és una aplicació de xarxa social dissenyada per facilitar l'organització de quedades per a barbacoes entre amics i/o familiars. Aquest projecte va ser desenvolupat en grup per Joan Paneque, Emma Cardosa, Roman Mysyura i Aniol Moreno a l'Institut Cendrassos de Figueres, amb l'objectiu de proporcionar una plataforma eficient i intuïtiva per coordinar esdeveniments socials al voltant d'aquest tipus d'activitat.",
+    name: t('projects.barbaq.title'),
+    description: t('projects.barbaq.description'),
     techStack: [
       'logos:vue',
       'logos:laravel',
@@ -30,12 +39,11 @@ const projects = [
     ],
     demoLink: 'https://opendata.ignorelist.com/',
     githubLink: '',
-    mainImage: '/src/assets/img/projects/openjobs.png',
+    mainImage: openJobsImg,
   },
   {
-    name: 'OpenJobs',
-    description:
-      "OpenJobs és una plataforma de cerca de feina que utilitza dades obertes proporcionades per la Generalitat de Catalunya, amb l'objectiu d'oferir una eina eficaç i accessible per a la recerca d'ocupació. Aquesta aplicació va ser dissenyada i desenvolupada en grup per Joan Paneque, Emma Cardosa i Aniol Moreno a l'Institut Cendrassos de Figueres, contribuint a la creació d'una solució innovadora per al mercat laboral.",
+    name: t('projects.openjobs.title'),
+    description: t('projects.openjobs.description'),
     techStack: [
       'logos:vue',
       'logos:laravel',
@@ -45,21 +53,19 @@ const projects = [
     ],
     demoLink: 'https://openjobs.aniolmorenobatlle.com/',
     githubLink: '',
-    mainImage: '/src/assets/img/projects/openjobs.png',
+    mainImage: openJobsImg,
   },
   {
-    name: 'Apartaments Figuerencs',
-    description:
-      "Apartaments Figuerencs és una aplicació que simula una plataforma web de lloguer d'apartaments turístics, dissenyada per oferir una experiència realista en la gestió de reserves. Aquesta aplicació va ser desenvolupada en grup per Joan Paneque i Aniol Moreno a l'Institut Cendrassos de Figueres, amb l'objectiu de crear una solució eficient i intuïtiva per a la simulació de lloguers turístics.",
+    name: t('projects.apartamentsFiguerencs.title'),
+    description: t('projects.apartamentsFiguerencs.description'),
     techStack: ['logos:php', 'logos:javascript', 'logos:bootstrap', 'logos:aws'],
     demoLink: 'https://opendata.ignorelist.com/',
     githubLink: '',
-    mainImage: '/src/assets/img/projects/apartamentsfiguerencs.png',
+    mainImage: apartamentsFiguerencsImg,
   },
   {
-    name: 'Gramola',
-    description:
-      "Gramola és una aplicació que simula una plataforma de música en línia, dissenyada per oferir una experiència interactiva en la reproducció i gestió de música. Aquesta aplicació va ser desenvolupada de manera independent per Aniol Moreno a l'Institut Cendrassos de Figueres, amb l'objectiu de crear una solució innovadora en l'àmbit de l'entreteniment digital.",
+    name: t('projects.gramola.title'),
+    description: t('projects.gramola.description'),
     techStack: [
       'logos:php',
       'logos:javascript',
@@ -69,12 +75,11 @@ const projects = [
     ],
     demoLink: 'https://opendata.ignorelist.com/',
     githubLink: 'https://github.com/aniolmorenobatlle/gramola',
-    mainImage: '/src/assets/img/projects/gramola.png',
+    mainImage: gramolaImg,
   },
   {
-    name: 'Freeing Alzahar',
-    description:
-      "Freeing Alzahar és una pàgina web interactiva que inclou un joc arcade inspirat en Mario Bros, creat per oferir una experiència lúdica entretinguda i dinàmica. Aquesta aplicació va ser desenvolupada per Marc Mas i Aniol Moreno com a projecte final del cicle formatiu de Grau Mitjà en Sistemes Microinformàtics i Xarxes a l'Institut Públic de Palamós, amb l'objectiu de combinar coneixements tècnics i creativitat en un projecte complet.",
+    name: t('projects.freeingAlzahar.title'),
+    description: t('projects.freeingAlzahar.description'),
     techStack: [
       'vscode-icons:file-type-html',
       'vscode-icons:file-type-css',
@@ -86,16 +91,16 @@ const projects = [
     ],
     demoLink: 'https://freeing-alazhar.netlify.app/',
     githubLink: 'https://github.com/aniolmorenobatlle/freeing-alzahar',
-    mainImage: '/src/assets/img/projects/freeing-alzahar.jpg',
+    mainImage: freeingAlzaharImg,
   },
-]
+])
 </script>
 
 <template>
   <div class="bg-gray-200 my-24 h-16 w-1 rounded-full hidden sm:block dark:bg-opacity-20" />
 
   <section id="projects" class="scroll-mt-28 mb-28">
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">My Projects</h2>
+    <h2 class="text-3xl font-medium capitalize mb-8 text-center">{{ title }}</h2>
     <div>
       <div v-for="(project, index) in projects" :key="index" class="group mb-3 sm:mb-8 last:mb-0">
         <section

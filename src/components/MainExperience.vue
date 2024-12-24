@@ -1,4 +1,11 @@
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const title = computed(() => t('experience.title'))
+
 const experiences = [
   {
     role: 'Web Developer',
@@ -36,7 +43,7 @@ const experiences = [
 
 <template>
   <section id="experience" class="scroll-mt-28 mb-28 sm:mb-40">
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">My experience</h2>
+    <h2 class="text-3xl font-medium capitalize mb-8 text-center">{{ title }}</h2>
     <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
       <div
         v-for="(experience, index) in experiences"
@@ -78,7 +85,6 @@ const experiences = [
             {{ experience.description }}
           </p>
         </div>
-        <!-- Afegim un nou div al costat oposat -->
         <div class="experience-dates text-center">
           <p>{{ experience.dates }}</p>
         </div>

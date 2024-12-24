@@ -1,4 +1,11 @@
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const title = computed(() => t('education.title'))
+
 const educations = [
   {
     degree: 'Bachelor of Information Technology',
@@ -21,7 +28,7 @@ const educations = [
     class="mb-20 sm:mb-28 scroll-mt-28 w-full md:w-[700px]"
     style="opacity: 1"
   >
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">My Education</h2>
+    <h2 class="text-3xl font-medium capitalize mb-8 text-center">{{ title }}</h2>
     <div
       v-for="(education, index) in educations"
       :key="index"

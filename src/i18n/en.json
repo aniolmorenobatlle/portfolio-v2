@@ -1,8 +1,61 @@
 {
-  "home": "Home",
-  "projects": "Projects",
-  "skills": "Skills",
-  "experience": "Experience",
-  "education": "Education",
-  "contact": "Contact"
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  },
+
+  "header": {
+    "description": "Hello, I'm Aniol. I'm a web and software developer. I'm currently working with Java, Laravel and Vue.js."
+  },
+
+  "projects": {
+    "title": "My Projects",
+    "trueta": {
+      "title": "Antibiotic Selection in Surgical Interventions",
+      "description": "This web application was designed and developed with the aim of facilitating the quick and effective selection of the appropriate antibiotic for each surgical intervention. The project, which was carried out by Joan Paneque, Emma Cardosa, Adrià Moya, Àlex Escribano and Aniol Moreno, was commissioned by the Dr. Josep Trueta University Hospital in Girona as part of an initiative to improve clinical processes. This application was recognized with the Higher Degree Award granted by the University of Girona, highlighting its innovation and impact on the health sector."
+    },
+    "barbaq": {
+      "title": "Barbaq",
+      "description": "Barbaq is a social network application designed to facilitate the organization of barbecues between friends and/or family members. This project was developed in a group by Joan Paneque, Emma Cardosa, Roman Mysyura and Aniol Moreno at the Cendrassos Institute in Figueres, with the aim of providing an efficient and intuitive platform to coordinate social events around this type of activity."
+    },
+    "openjobs": {
+      "title": "OpenJobs",
+      "description": "OpenJobs is a job search platform that uses open data provided by the Generalitat de Catalunya, with the aim of offering an effective and accessible tool for job search. This application was designed and developed in a group by Joan Paneque, Emma Cardosa and Aniol Moreno at the Cendrassos Institute in Figueres, contributing to the creation of an innovative solution for the labor market."
+    },
+    "apartamentsFiguerencs": {
+      "title": "Apartaments Figuerencs",
+      "description": "Apartaments Figuerencs is an application that simulates a web platform for renting tourist apartments, designed to offer a realistic experience in the management of reservations. This application was developed in a group by Joan Paneque and Aniol Moreno at the Cendrassos Institute in Figueres, with the aim of creating an efficient and intuitive solution for the simulation of tourist rentals."
+    },
+    "gramola": {
+      "title": "Gramola",
+      "description": "Gramola is an application that simulates an online music platform, designed to offer an interactive experience in the playback and management of music. This application was developed independently by Aniol Moreno at the Cendrassos Institute in Figueres, with the aim of creating an innovative solution in the field of digital entertainment."
+    },
+    "freeingAlzahar": {
+      "title": "Freeing Alzahar",
+      "description": "Freeing Alzahar is an interactive web page that includes an arcade game inspired by Mario Bros, created to offer an entertaining and dynamic gaming experience. This application was developed by Marc Mas and Aniol Moreno as the final project of the Intermediate Degree in Microcomputer Systems and Networks at the Public Institute of Palamós, with the aim of combining technical knowledge and creativity in a complete project."
+    }
+  },
+
+  "skills": {
+    "title": "My Skills"
+  },
+
+  "experience": {
+    "title": "My Experience"
+  },
+
+  "education": {
+    "title": "My Education"
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "email": "Your email",
+    "message": "Your message",
+    "send": "Send"
+  }
 }

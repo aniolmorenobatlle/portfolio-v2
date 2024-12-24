@@ -1,5 +1,11 @@
 <script setup>
+import { computed } from 'vue'
 import { Icon } from '@iconify/vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const title = computed(() => t('skills.title'))
 
 const skills = [
   { name: 'JavaScript', icon: 'logos:javascript' },
@@ -27,7 +33,7 @@ const skills = [
 
 <template>
   <section id="skills" class="mb-28 max-w-[58rem] scroll-mt-28 text-center sm:mb-40">
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">My Skills</h2>
+    <h2 class="text-3xl font-medium capitalize mb-8 text-center">{{ title }}</h2>
     <ul class="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
       <li
         v-for="(skill, index) in skills"

@@ -1,23 +1,23 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
-const sections = [
-  { name: t('home'), id: 'home' },
-  { name: t('projects'), id: 'projects' },
-  { name: t('skills'), id: 'skills' },
-  { name: t('experience'), id: 'experience' },
-  { name: t('education'), id: 'education' },
-  { name: t('contact'), id: 'contact' },
-]
+const sections = computed(() => [
+  { name: t('nav.home'), id: 'home' },
+  { name: t('nav.projects'), id: 'projects' },
+  { name: t('nav.skills'), id: 'skills' },
+  { name: t('nav.experience'), id: 'experience' },
+  { name: t('nav.education'), id: 'education' },
+  { name: t('nav.contact'), id: 'contact' },
+])
 
 const activeSection = ref('home')
 
 const updateActiveSection = () => {
   let found = false
-  sections.forEach((section) => {
+  sections.value.forEach((section) => {
     const element = document.getElementById(section.id)
     if (element) {
       const rect = element.getBoundingClientRect()
@@ -28,7 +28,7 @@ const updateActiveSection = () => {
     }
   })
 
-  if (!found) activeSection.value = sections[0].id
+  if (!found) activeSection.value = sections.value[0].id
 }
 
 onMounted(() => {
@@ -42,11 +42,23 @@ const scrollToSection = (id) => {
     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 }
+
+const widthClass = computed(() => {
+  switch (locale.value) {
+    case 'ca':
+      return 'sm:w-[38rem]'
+    case 'es':
+      return 'sm:w-[40rem]'
+    default:
+      return 'sm:w-[36rem]'
+  }
+})
 </script>
 
 <template>
   <div
-    class="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+    class="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+    :class="[widthClass]"
     style="opacity: 1; transform: translateX(-50%) translateY(0px); z-index: 9999"
   ></div>
   <nav
@@ -69,7 +81,7 @@ const scrollToSection = (id) => {
           ]"
           @click="scrollToSection(section.id)"
         >
-          {{ $t(section.name) }}
+          {{ section.name }}
           <span
             v-if="activeSection === section.id"
             class="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"

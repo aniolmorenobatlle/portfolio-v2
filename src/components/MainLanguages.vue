@@ -1,28 +1,57 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+
+import Catalan from '/src/assets/img/lang/catalan.png'
+import Spanish from '/src/assets/img/lang/spanish.png'
+import English from '/src/assets/img/lang/english.png'
 
 const { locale } = useI18n()
 
+const setCookie = (name, value, days) => {
+  const date = new Date()
+  date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000)
+  document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`
+}
+
+const getCookie = (name) => {
+  const cookieArr = document.cookie.split(';')
+  for (let i = 0; i < cookieArr.length; i++) {
+    const cookie = cookieArr[i].trim()
+    if (cookie.startsWith(`${name}=`)) {
+      return cookie.substring(name.length + 1)
+    }
+  }
+  return null
+}
+
 const buttons = ref([
-  { id: 1, img: '/src/assets/img/lang/catalan.png', lang: 'ca' },
-  { id: 2, img: '/src/assets/img/lang/spanish.png', lang: 'es' },
-  { id: 3, img: '/src/assets/img/lang/english.png', lang: 'en' },
+  { id: 1, img: Catalan, lang: 'ca' },
+  { id: 2, img: Spanish, lang: 'es' },
+  { id: 3, img: English, lang: 'en' },
 ])
 
 const showButtons = ref(false)
 
 const setActiveButton = (lang) => {
-  locale.value = lang // Change the language
-  console.log('Language changed to', lang, 'Current locale is', locale.value) // Added log to check
+  locale.value = lang
+  setCookie('language', lang, 30) // 30 days
+
   const selectedButton = buttons.value.find((button) => button.lang === lang)
   buttons.value = [selectedButton, ...buttons.value.filter((button) => button.lang !== lang)]
   showButtons.value = false
 }
 
-watch(locale, (newLocale) => {
-  console.log('Locale changed to:', newLocale)
-})
+const savedLanguage = getCookie('language')
+if (savedLanguage) {
+  locale.value = savedLanguage
+
+  // Move the selected language to the first position
+  buttons.value = [
+    buttons.value.find((button) => button.lang === savedLanguage),
+    ...buttons.value.filter((button) => button.lang !== savedLanguage),
+  ]
+}
 </script>
 
 <template>

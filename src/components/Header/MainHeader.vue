@@ -1,5 +1,19 @@
 <script setup>
+import { computed } from 'vue'
 import { Icon } from '@iconify/vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const userData = {
+  portrait: '/src/assets/img/amoreno.jpg',
+  githubLink: 'https://github.com/aniolmorenobatlle',
+  linkedinLink: 'https://www.linkedin.com/in/aniol-moreno-batlle/',
+  githubIcon: 'logos:github-icon',
+  linkedinIcon: 'il:linkedin',
+}
+
+const description = computed(() => t('header.description'))
 </script>
 
 <template>
@@ -10,7 +24,7 @@ import { Icon } from '@iconify/vue'
       <div class="relative">
         <div style="opacity: 1; transform: none">
           <img
-            src="/src/assets/img/amoreno.jpg"
+            :src="userData.portrait"
             alt="Aniol portrait"
             fetchpriority="high"
             width="192"
@@ -29,8 +43,7 @@ import { Icon } from '@iconify/vue'
       class="mb-10 mt-4 px-0 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-white max-w-[50rem] mx-auto"
       style="opacity: 1; transform: none"
     >
-      Hello, I'm Aniol. I'm a web and software developer. I'm currently working with Java, Laravel
-      and Vue.js.
+      {{ description }}
     </h1>
 
     <div
@@ -39,13 +52,13 @@ import { Icon } from '@iconify/vue'
     >
       <a
         class="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack text-gray-950"
-        href="https://github.com/aniolmorenobatlle"
+        :href="userData.githubLink"
         target="_blank"
       >
         GitHub
 
         <Icon
-          icon="logos:github-icon"
+          :icon="userData.githubIcon"
           alt="GitHub logo"
           width="24"
           height="24"
@@ -54,11 +67,17 @@ import { Icon } from '@iconify/vue'
       </a>
       <a
         class="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40"
-        href="https://www.linkedin.com/in/aniol-moreno-batlle/"
+        :href="userData.linkedinLink"
         target="_blank"
       >
         <span class="opacity-70">LinkedIn</span>
-        <Icon icon="il:linkedin" alt="LinkedIn logo" width="24" height="24" class="opacity-70" />
+        <Icon
+          :icon="userData.linkedinIcon"
+          alt="LinkedIn logo"
+          width="24"
+          height="24"
+          class="opacity-70"
+        />
       </a>
     </div>
   </div>
