@@ -2,24 +2,33 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
+import cendrassosLogo from '/src/assets/img/institution/logo-cendrassos.jpeg'
+import palamosLogo from '/src/assets/img/institution/logo-institut-palamos.png'
+
 const { t } = useI18n()
 
 const title = computed(() => t('education.title'))
 
-const educations = [
+const educations = computed(() => [
   {
-    degree: 'Bachelor of Information Technology',
-    institution: 'Queensland University of Technology',
-    graduation: 'Graduated in 2023',
-    image: 'https://www.benrogers.dev/_next/static/media/qut-Logo.807b96e8.png',
-    details: [
-      'Major in Computer Science',
-      'Minor in Networks & Security',
-      'Minor in Mobile Applications',
-      "Science & Engineering Dean's List - 2019 & 2021",
-    ],
+    degree: t('education.software-developer.title'),
+    institution: t('education.software-developer.institution'),
+    description: t('education.software-developer.description'),
+    image: palamosLogo,
   },
-]
+  {
+    degree: t('education.web-developer.title'),
+    institution: t('education.web-developer.institution'),
+    description: t('education.web-developer.description'),
+    image: cendrassosLogo,
+  },
+  {
+    degree: t('education.computer-technician.title'),
+    institution: t('education.computer-technician.institution'),
+    description: t('education.computer-technician.description'),
+    image: palamosLogo,
+  },
+])
 </script>
 
 <template>
@@ -34,16 +43,18 @@ const educations = [
       :key="index"
       class="mt-4 flex gap-6 border border-black/5 rounded-lg pt-4 pb-7 px-5 md:p-10 bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20"
     >
-      <div>
-        <img width="150" height="150" style="color: transparent" :src="education.image" />
+      <div class="hidden sm:block">
+        <img
+          :src="education.image"
+          alt=""
+          class="w-[150px] h-[150px] object-contain max-w-none"
+          />
       </div>
       <div>
         <p class="text-lg font-medium">{{ education.degree }}</p>
         <p>{{ education.institution }}</p>
         <p class="mt-1">{{ education.graduation }}</p>
-        <ul v-for="(detail, index) in education.details" :key="index" class="list-disc pl-6">
-          <li>{{ detail }}</li>
-        </ul>
+        <p class="mt-1">{{ education.description }}</p>
       </div>
     </div>
   </section>

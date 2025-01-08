@@ -47,17 +47,49 @@
   },
 
   "experience": {
-    "title": "My Experience"
+    "title": "My Experience",
+    "institut-torroella": {
+      "title": "Internship",
+      "company": "Institut Torroella de Montgrí",
+      "description": "I did an internship at the Institut Torroella de Montgrí, where I collaborated with the computer systems department on technical support and maintenance of the institute's IT infrastructure. This experience allowed me to acquire practical knowledge in network and computer systems management, as well as in solving technical problems in an educational environment.",
+      "dates": "From October 2021 to March 2022"
+    },
+    "hipsotech": {
+      "title": "Internship",
+      "company": "Hipsotech SL",
+      "description": "I did an internship at the company Hipostech SL, where I collaborated with the development team on web programming and design tasks. During this experience, I participated in the creation of web projects using technologies such as HTML, CSS, JavaScript, PHP and Liquid, as well as in the implementation of innovative solutions for the company's clients.",
+      "dates": "From November 2023 to April 2024"
+    }
   },
 
   "education": {
-    "title": "My Education"
+    "title": "My Education",
+    "computer-technician": {
+      "title": "Computer Networks and Systems Technician",
+      "institution": "Institut Públic de Palamós",
+      "description": "During the 2020-2022 academic years, I completed a vocational training program in Microcomputer Systems and Networks at the Institut Públic de Palamós. This training allowed me to gain practical knowledge in the installation, configuration, and maintenance of IT systems, as well as network management and troubleshooting."
+    },
+    "web-developer": {
+      "title": "Web Application Developer",
+      "institution": "Institut Cendrassos de Figueres",
+      "description": "During the 2022-2024 academic years, I completed a higher vocational training program in Web Application Development at the Institut Cendrassos de Figueres. This program enabled me to acquire advanced knowledge in web programming, user interface design, database management, and the development of web projects using current technologies, as well as collaborating in real-world projects as part of a team."
+    },
+    "software-developer": {
+      "title": "Multiplatform Application Developer",
+      "institution": "Institut Públic de Palamós",
+      "description": "During the 2024-present academic years, I am pursuing a higher vocational training program in Multiplatform Application Development at the Institut Públic de Palamós. This education will allow me to acquire advanced knowledge in application programming for different platforms, user interface design, and database management."
+    }
   },
 
   "contact": {
     "title": "Contact me",
     "email": "Your email",
     "message": "Your message",
-    "send": "Send"
+    "send": "Send",
+    "send-success": "Your message has been sent successfully. Thank you!",
+    "send-error": "An error occurred while sending your message. Please try again.",
+    "email-error": "Please enter a valid email address.",
+    "message-error": "Please enter a message.",
+    "exit": "Exit"
   }
 }

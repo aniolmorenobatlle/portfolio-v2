@@ -47,17 +47,49 @@
   },
 
   "experience": {
-    "title": "La meva Experiència"
+    "title": "La meva Experiència",
+    "institut-torroella": {
+      "title": "Pràctiques",
+      "company": "Institut Torroella de Montgrí",
+      "description": "Vaig realitzar un període de pràctiques a l'Institut Torroella de Montgrí, on vaig col·laborar amb el departament de sistemes informàtics en tasques de suport tècnic i manteniment de la infraestructura informàtica de l'institut. Aquesta experiència em va permetre adquirir coneixements pràctics en la gestió de xarxes i sistemes informàtics, així com en la resolució de problemes tècnics en un entorn educatiu.",
+      "dates": "De octubre de 2021 a març de 2022"
+    },
+    "hipsotech": {
+      "title": "Pràctiques",
+      "company": "Hipsotech SL",
+      "description": "Vaig realitzar un període de pràctiques a l'empresa Hipostech SL, on vaig col·laborar amb l'equip de desenvolupament en tasques de programació i disseny web. Durant aquesta experiència, vaig participar en la creació de projectes web utilitzant tecnologies com HTML, CSS, JavaScript, PHP i Liquid, així com en la implementació de solucions innovadores per a clients de l'empresa.",
+      "dates": "De novembre del 2023 a abril del 2024"
+    }
   },
 
   "education": {
-    "title": "La meva Educació"
+    "title": "La meva Educació",
+    "computer-technician": {
+      "title": "Tècnic en Xarxes i Sistemes Informàtics",
+      "institution": "Institut Públic de Palamós",
+      "description": "Durant el curs 2020-2022 vaig cursar un cicle formatiu de grau mitjà en Sistemes Microinformàtics i Xarxes (SMX) a l'Institut Públic de Palamós. Aquesta formació em va permetre adquirir coneixements pràctics en la instal·lació, configuració i manteniment de sistemes informàtics, així com en la gestió de xarxes i resolució de problemes tècnics."
+    },
+    "web-developer": {
+      "title": "Desenvolupador d'Aplicacions Web",
+      "institution": "Institut Cendrassos de Figueres",
+      "description": "Durant el curs 2022-2024 vaig cursar un cicle formatiu de grau superior en Desenvolupament d'Aplicacions Web (DAW) a l'Institut Cendrassos de Figueres. Aquesta formació em va permetre adquirir coneixements avançats en programació web, disseny d'interfícies d'usuari i gestió de bases de dades, així com en la creació de projectes web amb tecnologies actuals, aixi com treballar en grup en projectes reals."
+    },
+    "software-developer": {
+      "title": "Desenvolupador d'Aplicacions Multiplataforma",
+      "institution": "Institut Públic de Palamós",
+      "description": "Durant el curs 2024-actual estic cursant un cicle formatiu de grau superior en Desenvolupament d'Aplicacions Multiplataforma (DAM) a l'Institut Públic de Palamós. Aquesta formació em permetrà adquirir coneixements avançats en programació d'aplicacions per a diferents plataformes, disseny d'interfícies d'usuari i gestió de bases de dades."
+    }
   },
 
   "contact": {
     "title": "Contacta amb mi",
     "email": "El teu correu electrònic",
     "message": "El teu missatge",
-    "send": "Enviar"
+    "send": "Enviar",
+    "send-success": "El teu missatge s'ha enviat correctament. Gràcies!",
+    "send-error": "Hi ha hagut un error en l'enviament del teu missatge. Si us plau, torna a intentar-ho.",
+    "email-error": "Si us plau, introdueix una adreça de correu electrònic vàlida.",
+    "message-error": "Si us plau, introdueix un missatge.",
+    "exit": "Sortir"
   }
 }
