@@ -16,7 +16,9 @@
     "title": "My Projects",
     "trueta": {
       "title": "Antibiotic Selection in Surgical Interventions",
-      "description": "This web application was designed and developed with the aim of facilitating the quick and effective selection of the appropriate antibiotic for each surgical intervention. The project, which was carried out by Joan Paneque, Emma Cardosa, Adrià Moya, Àlex Escribano and Aniol Moreno, was commissioned by the Dr. Josep Trueta University Hospital in Girona as part of an initiative to improve clinical processes. This application was recognized with the Higher Degree Award granted by the University of Girona, highlighting its innovation and impact on the health sector."
+      "description": "This web application was designed and developed with the aim of facilitating the quick and effective selection of the appropriate antibiotic for each surgical intervention. The project, which was carried out by Joan Paneque, Emma Cardosa, Adrià Moya, Àlex Escribano and Aniol Moreno, was commissioned by the Dr. Josep Trueta University Hospital in Girona as part of an initiative to improve clinical processes. This application was recognized with the Higher Degree Award granted by the University of Girona, highlighting its innovation and impact on the health sector.",
+      "user": "User: ",
+      "password": "Password: "
     },
     "barbaq": {
       "title": "Barbaq",

@@ -3,6 +3,8 @@ import { computed } from 'vue'
 import { Icon } from '@iconify/vue'
 import { useI18n } from 'vue-i18n'
 
+import truetaImg from '/src/assets/img/projects/trueta.png'
+import barbaqImg from '/src/assets/img/projects/barbaq.png'
 import openJobsImg from '/src/assets/img/projects/openjobs.png'
 import apartamentsFiguerencsImg from '/src/assets/img/projects/apartamentsfiguerencs.png'
 import gramolaImg from '/src/assets/img/projects/gramola.png'
@@ -16,6 +18,8 @@ const projects = computed(() => [
   {
     name: t('projects.trueta.title'),
     description: t('projects.trueta.description'),
+    user: t('projects.trueta.user'),
+    password: t('projects.trueta.password'),
     techStack: [
       'logos:vue',
       'logos:laravel',
@@ -23,9 +27,9 @@ const projects = computed(() => [
       'logos:mariadb-icon',
       'cib:oracle',
     ],
-    demoLink: 'https://opendata.ignorelist.com/',
+    demoLink: 'https://antibiotic.aniolmorenobatlle.com/',
     githubLink: '',
-    mainImage: openJobsImg,
+    mainImage: truetaImg,
   },
   {
     name: t('projects.barbaq.title'),
@@ -37,9 +41,9 @@ const projects = computed(() => [
       'logos:mariadb-icon',
       'cib:oracle',
     ],
-    demoLink: 'https://opendata.ignorelist.com/',
+    demoLink: 'https://barbaq.aniolmorenobatlle.com/',
     githubLink: '',
-    mainImage: openJobsImg,
+    mainImage: barbaqImg,
   },
   {
     name: t('projects.openjobs.title'),
@@ -59,7 +63,7 @@ const projects = computed(() => [
     name: t('projects.apartamentsFiguerencs.title'),
     description: t('projects.apartamentsFiguerencs.description'),
     techStack: ['logos:php', 'logos:javascript', 'logos:bootstrap', 'logos:aws'],
-    demoLink: 'https://opendata.ignorelist.com/',
+    demoLink: 'https://apartamentsfiguerencs.aniolmorenobatlle.com/',
     githubLink: '',
     mainImage: apartamentsFiguerencsImg,
   },
@@ -73,7 +77,7 @@ const projects = computed(() => [
       'vscode-icons:file-type-css',
       'logos:aws',
     ],
-    demoLink: 'https://opendata.ignorelist.com/',
+    demoLink: 'https://gramola.aniolmorenobatlle.com/',
     githubLink: 'https://github.com/aniolmorenobatlle/gramola',
     mainImage: gramolaImg,
   },
@@ -119,6 +123,18 @@ const projects = computed(() => [
             </ul>
             <p class="mt-2 leading-relaxed text-gray-700 dark:text-white/70 mb-3">
               {{ project.description }}
+            </p>
+            <p
+              v-if="project.user"
+              class="mt-2 leading-relaxed text-gray-700 dark:text-white/70 mb-3"
+            >
+              <b>{{ project.user }}</b> user@trueta.cat
+            </p>
+            <p
+              v-if="project.password"
+              class="mt-2 leading-relaxed text-gray-700 dark:text-white/70 mb-3"
+            >
+              <b>{{ project.password }}</b> password
             </p>
             <div class="flex">
               <a

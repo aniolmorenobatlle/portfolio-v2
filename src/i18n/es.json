@@ -16,7 +16,9 @@
     "title": "Mis Proyectos",
     "trueta": {
       "title": "Selección de Antibióticos en Intervenciones Quirúrgicas",
-      "description": "Esta aplicación web fue diseñada y desarrollada con el objetivo de facilitar la selección rápida y efectiva del antibiótico adecuado para cada intervención quirúrgica. El proyecto, que fue realizado por Joan Paneque, Emma Cardosa, Adrià Moya, Àlex Escribano y Aniol Moreno, fue encargado por el Hospital Universitario de Girona Dr. Josep Trueta como parte de una iniciativa para mejorar los procesos clínicos. Esta aplicación fue reconocida con el Premio de Grado Superior otorgado por la Universidad de Girona, destacándose por su innovación e impacto en el sector sanitario."
+      "description": "Esta aplicación web fue diseñada y desarrollada con el objetivo de facilitar la selección rápida y efectiva del antibiótico adecuado para cada intervención quirúrgica. El proyecto, que fue realizado por Joan Paneque, Emma Cardosa, Adrià Moya, Àlex Escribano y Aniol Moreno, fue encargado por el Hospital Universitario de Girona Dr. Josep Trueta como parte de una iniciativa para mejorar los procesos clínicos. Esta aplicación fue reconocida con el Premio de Grado Superior otorgado por la Universidad de Girona, destacándose por su innovación e impacto en el sector sanitario.",
+      "user": "Usuario: ",
+      "password": "Contraseña: "
     },
     "barbaq": {
       "title": "Barbaq",
