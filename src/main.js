@@ -9,7 +9,7 @@ import ca from './i18n/ca.json'
 import en from './i18n/en.json'
 import es from './i18n/es.json'
 
-const defaultLocale = Cookies.get('locale') || 'en'
+const defaultLocale = Cookies.get('locale') || 'ca'
 
 const i18n = createI18n({
   legacy: false,
