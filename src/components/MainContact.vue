@@ -54,12 +54,6 @@ onMounted(() => {
   script.src = 'https://www.google.com/recaptcha/api.js';
   script.async = true;
   script.defer = true;
-  script.onload = () => {
-    console.log('reCAPTCHA carregat correctament!');
-  };
-  script.onerror = () => {
-    console.error('reCAPTCHA no s\'ha carregat correctament!');
-  };
   document.head.appendChild(script);
 });
 
@@ -92,7 +86,7 @@ onMounted(() => {
         maxlength="5000"
       ></textarea>
 
-      <div class="g-recaptcha mb-3" data-sitekey="6LdolLIqAAAAAGBAtatiqKxPtWND7pEQIcQtq7wF"></div>
+      <div class="g-recaptcha mb-3" data-sitekey="6LdolLIqAAAAAGBAtatiqKxPtWND7pEQIcQtq7wF" aria-required></div>
 
       <button
         type="submit"
