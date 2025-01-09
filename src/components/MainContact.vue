@@ -46,7 +46,8 @@ const closeModal = () => {
     modalRef.value.close()
   }
 
-  window.location.reload()
+  emailInput.value.value = ''
+  messageInput.value.value = ''
 }
 
 onMounted(() => {
@@ -56,7 +57,6 @@ onMounted(() => {
   script.defer = true;
   document.head.appendChild(script);
 });
-
 </script>
 
 <template>
@@ -86,7 +86,7 @@ onMounted(() => {
         maxlength="5000"
       ></textarea>
 
-      <div class="g-recaptcha mb-3" data-sitekey="6LdolLIqAAAAAGBAtatiqKxPtWND7pEQIcQtq7wF" aria-required></div>
+      <div class="g-recaptcha mb-3" data-sitekey="6LdolLIqAAAAAGBAtatiqKxPtWND7pEQIcQtq7wF"></div>
 
       <button
         type="submit"
