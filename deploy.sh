@@ -12,7 +12,7 @@ fi
 
 # Desplegar el projecte a Netlify
 echo "Deploying to Netlify..."
-netlify deploy --prod --dir=dist
+netlify deploy --prod --dir=dist --site 68882927-21bd-43e0-8157-13c15d1ac2bb
 
 # Comprovar si netlify deploy s'ha completat correctament
 if [ $? -ne 0 ]; then
