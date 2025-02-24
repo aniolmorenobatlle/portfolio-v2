@@ -3,10 +3,12 @@ import { computed } from 'vue'
 import { Icon } from '@iconify/vue'
 import { useI18n } from 'vue-i18n'
 
+import portrait from '/src/assets/img/amoreno.jpg'
+
 const { t } = useI18n()
 
 const userData = {
-  portrait: '/src/assets/img/amoreno.jpg',
+  portrait: portrait,
   githubLink: 'https://github.com/aniolmorenobatlle',
   linkedinLink: 'https://www.linkedin.com/in/aniol-moreno-batlle/',
   githubIcon: 'logos:github-icon',

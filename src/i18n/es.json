@@ -47,17 +47,50 @@
   },
 
   "experience": {
-    "title": "Mi Experiencia"
+    "title": "Mi Experiencia",
+    "institut-torroella": {
+      "title": "Prácticas",
+      "company": "Institut Torroella de Montgrí",
+      "description": "Realicé un período de prácticas en el Institut Torroella de Montgrí, donde colaboré con el departamento de sistemas informáticos en tareas de soporte técnico y mantenimiento de la infraestructura informática del instituto. Esta experiencia me permitió adquirir conocimientos prácticos en la gestión de redes y sistemas informáticos, así como en la resolución de problemas técnicos en un entorno educativo.",
+      "dates": "De octubre de 2021 a marzo de 2022"
+    },
+    "hipsotech": {
+      "title": "Prácticas",
+      "company": "Hipsotech SL",
+      "description": "Realicé un período de prácticas en la empresa Hipostech SL, donde colaboré con el equipo de desarrollo en tareas de programación y diseño web. Durante esta experiencia, participé en la creación de proyectos web utilizando tecnologías como HTML, CSS, JavaScript, PHP y Liquid, así como en la implementación de soluciones innovadoras para clientes de la empresa.",
+      "dates": "De noviembre de 2023 a abril de 2024"
+    }
   },
 
   "education": {
-    "title": "Mi Educación"
+    "title": "Mi Educación",
+    "computer-technician": {
+      "title": "Técnico en Redes y Sistemas Informáticos",
+      "institution": "Institut Públic de Palamós",
+      "description": "Durante el curso 2020-2022, realicé un ciclo formativo de grado medio en Sistemas Microinformáticos y Redes (SMR) en el Institut Públic de Palamós. Esta formación me permitió adquirir conocimientos prácticos en la instalación, configuración y mantenimiento de sistemas informáticos, así como en la gestión de redes y resolución de problemas técnicos."
+    },
+    "web-developer": {
+      "title": "Desarrollador de Aplicaciones Web",
+      "institution": "Institut Cendrassos de Figueres",
+      "description": "Durante el curso 2022-2024, realicé un ciclo formativo de grado superior en Desarrollo de Aplicaciones Web (DAW) en el Institut Cendrassos de Figueres. Esta formación me permitió adquirir conocimientos avanzados en programación web, diseño de interfaces de usuario y gestión de bases de datos, así como en la creación de proyectos web con tecnologías actuales, además de trabajar en equipo en proyectos reales."
+    },
+    "software-developer": {
+      "title": "Desarrollador de Aplicaciones Multiplataforma",
+      "institution": "Institut Públic de Palamós",
+      "description": "Durante el curso 2024-actual, estoy cursando un ciclo formativo de grado superior en Desarrollo de Aplicaciones Multiplataforma (DAM) en el Institut Públic de Palamós. Esta formación me permitirá adquirir conocimientos avanzados en programación de aplicaciones para diferentes plataformas, diseño de interfaces de usuario y gestión de bases de datos."
+    }
+
   },
 
   "contact": {
     "title": "Contacta conmigo",
     "email": "Tu correo electrónico",
     "message": "Tu mensaje",
-    "send": "Enviar"
+    "send": "Enviar",
+    "send-success": "Tu mensaje se ha enviado correctamente. ¡Gracias!",
+    "send-error": "Ha habido un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+    "email-error": "Por favor, introduce una dirección de correo electrónico válida.",
+    "message-error": "Por favor, introduce un mensaje.",
+    "exit": "Salir"
   }
 }

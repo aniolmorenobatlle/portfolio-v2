@@ -6,39 +6,20 @@ const { t } = useI18n()
 
 const title = computed(() => t('experience.title'))
 
-const experiences = [
+const experiences = computed(() => [
   {
-    role: 'Web Developer',
-    company: 'M3 Digital - Contract',
-    description: `
-      Front-end development for a variety of Shopify stores such as FitazFK, Rider Collective,
-      Masseuse Massage, Francesca Jewellery and Salty Captain. Developed high quality landing
-      pages and front end features using HTML, CSS, SCSS, JavaScript and Liquid.
-    `,
-    dates: 'September 2021 - February 2022',
+    role: t('experience.hipsotech.title'),
+    company: t('experience.hipsotech.company'),
+    description: t('experience.hipsotech.description'),
+    dates: t('experience.hipsotech.dates'),
   },
   {
-    role: 'Junior Developer',
-    company: 'YouPay',
-    description: `
-      Developed new features using Laravel, Vue.js, PHP, JavaScript, Tailwind CSS, MySQL and
-      REST APIs. Created an email notification system for mechants to receive weekly/monthly
-      summaries of YouPay carts created, paid and cancelled. I also integrated YouPay into
-      dozens of stores.
-    `,
-    dates: 'February 2022 - November 2022',
+    role: t('experience.institut-torroella.title'),
+    company: t('experience.institut-torroella.company'),
+    description: t('experience.institut-torroella.description'),
+    dates: t('experience.institut-torroella.dates'),
   },
-  {
-    role: 'Software Engineer',
-    company: 'The University of Queensland',
-    description: `
-      Full-stack software engineer in the Application Development and Support team. Worked on
-      web applications such as CAHP (Casual Academic Hire and Payment), UQ Maps, UQ Donations,
-      and Programs and Courses.
-    `,
-    dates: 'November 2022 - January 2024',
-  },
-]
+])
 </script>
 
 <template>
