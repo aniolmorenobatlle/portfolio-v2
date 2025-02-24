@@ -1,6 +1,6 @@
 <script setup>
-import { computed } from 'vue'
 import { Icon } from '@iconify/vue'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -14,6 +14,7 @@ const skills = [
   { name: 'PHP', icon: 'logos:php' },
   { name: 'Vue.js', icon: 'logos:vue' },
   { name: 'Laravel', icon: 'logos:laravel' },
+  { name: 'React', icon: 'logos:react' },
   { name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
   { name: 'Bootstrap', icon: 'logos:bootstrap' },
   { name: 'Vite', icon: 'logos:vitejs' },
