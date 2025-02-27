@@ -24,7 +24,6 @@ const skills = [
   { name: 'MariaDB', icon: 'logos:mariadb-icon' },
   { name: 'MySQL', icon: 'logos:mysql' },
   { name: 'AWS', icon: 'logos:aws' },
-  { name: 'Oracle Cloud', icon: 'cib:oracle' },
   { name: 'Git', icon: 'logos:git-icon' },
   { name: 'GitHub', icon: 'logos:github-icon' },
   { name: 'Docker', icon: 'logos:docker-icon' },
