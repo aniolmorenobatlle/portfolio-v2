@@ -1,0 +1,5 @@
+npm install -g netlify-cli
+netlify login
+netlify link
+netlify status
+netlify deploy --prod
