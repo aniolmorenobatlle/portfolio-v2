@@ -7,6 +7,12 @@ const { t } = useI18n()
 const title = computed(() => t('experience.title'))
 
 const experiences = computed(() => [
+    {
+    role: t('experience.swhosting.title'),
+    company: t('experience.swhosting.company'),
+    description: t('experience.swhosting.description'),
+    dates: t('experience.swhosting.dates'),
+  },
   {
     role: t('experience.hipsotech.title'),
     company: t('experience.hipsotech.company'),
@@ -18,13 +24,13 @@ const experiences = computed(() => [
     company: t('experience.institut-torroella.company'),
     description: t('experience.institut-torroella.description'),
     dates: t('experience.institut-torroella.dates'),
-  },
+  }
 ])
 </script>
 
 <template>
   <section id="experience" class="scroll-mt-28 mb-28 sm:mb-40">
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">{{ title }}</h2>
+    <h2 class="mb-8 text-3xl font-medium text-center capitalize">{{ title }}</h2>
     <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
       <div
         v-for="(experience, index) in experiences"
@@ -32,7 +38,7 @@ const experiences = computed(() => [
         class="vertical-timeline-element"
       >
         <span
-          class="vertical-timeline-element-icon bounce-in bg-white text-2xl flex items-center justify-center"
+          class="flex items-center justify-center text-2xl bg-white vertical-timeline-element-icon bounce-in"
         >
           <svg
             stroke="currentColor"
@@ -53,11 +59,11 @@ const experiences = computed(() => [
         </span>
         <div
           style="background: #f3f4f6"
-          class="vertical-timeline-element-content bounce-in shadow-none border border-black/5 text-left py-5 px-8"
+          class="px-8 py-5 text-left border shadow-none vertical-timeline-element-content bounce-in border-black/5"
         >
-          <h3 class="font-semibold capitalize flex justify-between items-center">
+          <h3 class="flex items-center justify-between font-semibold capitalize">
             {{ experience.role }}
-            <span class="experience-dates-responsive text-center hidden">
+            <span class="hidden text-center experience-dates-responsive">
               {{ experience.dates }}</span
             >
           </h3>
@@ -66,7 +72,7 @@ const experiences = computed(() => [
             {{ experience.description }}
           </p>
         </div>
-        <div class="experience-dates text-center">
+        <div class="text-center experience-dates">
           <p>{{ experience.dates }}</p>
         </div>
       </div>

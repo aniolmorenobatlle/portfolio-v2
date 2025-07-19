@@ -59,6 +59,12 @@
       "company": "Hipsotech SL",
       "description": "I did an internship at the company Hipostech SL, where I collaborated with the development team on web programming and design tasks. During this experience, I participated in the creation of web projects using technologies such as HTML, CSS, JavaScript, PHP and Liquid, as well as in the implementation of innovative solutions for the company's clients.",
       "dates": "From November 2023 to April 2024"
+    },
+    "swhosting": {
+      "title": "Full Stack Web Developer",
+      "company": "SW Hosting",
+      "description": "I currently work as a web developer at SW Hosting, where I am involved in the development and maintenance of web projects using technologies such as Laravel and Tailwind CSS. My tasks include researching innovative solutions for clients, implementing advanced functionalities, and collaborating with the team to ensure the quality and efficiency of the projects.",
+      "dates": "From June 2024 to present"
     }
   },
 
@@ -77,7 +83,7 @@
     "software-developer": {
       "title": "Multiplatform Application Developer",
       "institution": "Institut Públic de Palamós",
-      "description": "During the 2024-present academic years, I am pursuing a higher vocational training program in Multiplatform Application Development at the Institut Públic de Palamós. This education will allow me to acquire advanced knowledge in application programming for different platforms, user interface design, and database management."
+      "description": "During the 2024-2025 academic years, I completed a higher vocational training program in Multiplatform Application Development at the Institut Públic de Palamós. This education will allow me to acquire advanced knowledge in application programming for different platforms, user interface design, and database management."
     }
   },
 

@@ -59,6 +59,12 @@
       "company": "Hipsotech SL",
       "description": "Vaig realitzar un període de pràctiques a l'empresa Hipostech SL, on vaig col·laborar amb l'equip de desenvolupament en tasques de programació i disseny web. Durant aquesta experiència, vaig participar en la creació de projectes web utilitzant tecnologies com HTML, CSS, JavaScript, PHP i Liquid, així com en la implementació de solucions innovadores per a clients de l'empresa.",
       "dates": "De novembre del 2023 a abril del 2024"
+    },
+    "swhosting": {
+      "title": "Desenvolupador Web Full Stack",
+      "company": "SW Hosting",
+      "description": "Actualment treballo com a desenvolupador web a SW Hosting, on estic involucrat en el desenvolupament i manteniment de projectes web utilitzant tecnologies com Laravel i Tailwind CSS. La meva tasca inclou la recerca de solucions innovadores per a clients, la implementació de funcionalitats avançades i la col·laboració amb l'equip per garantir la qualitat i l'eficiència dels projectes.",
+      "dates": "Des de juny del 2024 fins al present"
     }
   },
 
@@ -77,7 +83,7 @@
     "software-developer": {
       "title": "Desenvolupador d'Aplicacions Multiplataforma",
       "institution": "Institut Públic de Palamós",
-      "description": "Durant el curs 2024-actual estic cursant un cicle formatiu de grau superior en Desenvolupament d'Aplicacions Multiplataforma (DAM) a l'Institut Públic de Palamós. Aquesta formació em permetrà adquirir coneixements avançats en programació d'aplicacions per a diferents plataformes, disseny d'interfícies d'usuari i gestió de bases de dades."
+      "description": "Durant el curs 2024-2025 vaig cursar un cicle formatiu de grau superior en Desenvolupament d'Aplicacions Multiplataforma (DAM) a l'Institut Públic de Palamós. Aquesta formació em permetrà adquirir coneixements avançats en programació d'aplicacions per a diferents plataformes, disseny d'interfícies d'usuari i gestió de bases de dades."
     }
   },
 
