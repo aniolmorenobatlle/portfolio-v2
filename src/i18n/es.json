@@ -9,7 +9,7 @@
   },
 
   "header": {
-    "description": "Hola, soy Aniol. Soy un desarrollador web y de software. Actualmente trabajo con Java, Laravel y Vue.js."
+    "description": "Hola, soy Aniol. Soy un desarrollador web y aplicaciones multiplataforma. Actualmente trabajo con Laravel, Livewire y TailwindCSS."
   },
 
   "projects": {
@@ -63,7 +63,7 @@
     "swhosting": {
       "title": "Desarrollador Web Full Stack",
       "company": "SW Hosting",
-      "description": "Actualmente trabajo como desarrollador web en SW Hosting, donde estoy involucrado en el desarrollo y mantenimiento de proyectos web utilizando tecnologías como Laravel y Tailwind CSS. Mis tareas incluyen la investigación de soluciones innovadoras para clientes, la implementación de funcionalidades avanzadas y la colaboración con el equipo para garantizar la calidad y eficiencia de los proyectos.",
+      "description": "Actualmente trabajo como desarrollador web en SW Hosting, donde me encargo del mantenimiento y la evolución de las plataformas principales de la empresa: swhosting.com y swpanel.com. Mi labor incluye implementar nuevas funcionalidades, aplicar mejoras continuas, corregir incidencias y garantizar la estabilidad y el buen rendimiento de las webs. Trabajo con Laravel, Livewire, Alpine.js, JavaScript y Tailwind CSS, y también participo en la investigación y propuesta de soluciones para mejorar la experiencia de usuario y la eficiencia general. Soy el responsable directo del mantenimiento técnico y la evolución de las webs de la empresa.",
       "dates": "Desde junio de 2025 hasta el presente"
     }
   },

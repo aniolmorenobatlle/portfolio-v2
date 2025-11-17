@@ -9,7 +9,7 @@
   },
 
   "header": {
-    "description": "Hello, I'm Aniol. I'm a web and software developer. I'm currently working with Java, Laravel and Vue.js."
+    "description": "Hello, I'm Aniol. I'm a web and cross-platform developer. I'm currently working with Laravel, Livewire and TailwindCSS."
   },
 
   "projects": {
@@ -63,7 +63,7 @@
     "swhosting": {
       "title": "Full Stack Web Developer",
       "company": "SW Hosting",
-      "description": "I currently work as a web developer at SW Hosting, where I am involved in the development and maintenance of web projects using technologies such as Laravel and Tailwind CSS. My tasks include researching innovative solutions for clients, implementing advanced functionalities, and collaborating with the team to ensure the quality and efficiency of the projects.",
+      "description": "I am currently working as a web developer at SW Hosting, where I am responsible for maintaining and improving the company's main platforms: swhosting.com and swpanel.com. My work involves implementing new features, applying continuous improvements, fixing issues, and ensuring the stability and performance of the websites. I work with Laravel, Livewire, Alpine.js, JavaScript, and Tailwind CSS, and I also contribute to researching and proposing solutions to enhance user experience and overall efficiency. I am directly responsible for the technical upkeep and evolution of the company's web platforms.",
       "dates": "From June 2025 to present"
     }
   },
@@ -76,14 +76,14 @@
       "description": "During the 2020-2022 academic years, I completed a vocational training program in Microcomputer Systems and Networks at the Institut Públic de Palamós. This training allowed me to gain practical knowledge in the installation, configuration, and maintenance of IT systems, as well as network management and troubleshooting."
     },
     "web-developer": {
-      "title": "Web Application Developer",
+      "title": "Web Developer",
       "institution": "Institut Cendrassos de Figueres",
       "description": "During the 2022-2024 academic years, I completed a higher vocational training program in Web Application Development at the Institut Cendrassos de Figueres. This program enabled me to acquire advanced knowledge in web programming, user interface design, database management, and the development of web projects using current technologies, as well as collaborating in real-world projects as part of a team."
     },
     "software-developer": {
-      "title": "Multiplatform Application Developer",
+      "title": "Cross-Platform App Developer",
       "institution": "Institut Públic de Palamós",
-      "description": "During the 2024-2025 academic years, I completed a higher vocational training program in Multiplatform Application Development at the Institut Públic de Palamós. This education will allow me to acquire advanced knowledge in application programming for different platforms, user interface design, and database management."
+      "description": "During the 2024-2025 academic years, I completed a higher vocational training program in Cross-Platform App Developer at the Institut Públic de Palamós. This education will allow me to acquire advanced knowledge in application programming for different platforms, user interface design, and database management."
     }
   },
 
